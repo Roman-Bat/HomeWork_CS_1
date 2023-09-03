@@ -1,2 +1,35 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/*********************************************************************************************************************
+Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+2, 3, 7 -> 7
+44 5 78 -> 78
+22 3 9 -> 22
+
+**********************************************************************************************************************/
+int num_1;
+int num_2;
+int num_3;
+int max = 0;
+
+Console.WriteLine("Введите первое целое число: ");
+num_1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите второе целое число: ");
+num_2 = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите третье целое число: ");
+num_3 = int.Parse(Console.ReadLine());
+
+
+if (num_1 > num_2)
+{
+   max = num_1;
+}
+else
+{
+    max = num_2;
+}
+if (num_3 > max)
+{
+    max = num_3;
+}
+
+ Console.WriteLine("Вы ввели: " + num_1 + " " + num_2 + " " + num_3);
+ Console.WriteLine("Наибольшее из этих чисел: " + max);
